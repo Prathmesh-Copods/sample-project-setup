@@ -37,10 +37,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "sh hooks/pre-commit",
-      "pre-push": "sh .husky/_/pre-push"
+        "pre-commit": "./commands/pre-commit",
+        "pre-push": "./commands/pre-push $HUSKY_GIT_STDIN"
     }
-  },
+},
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "yarn run lint"
