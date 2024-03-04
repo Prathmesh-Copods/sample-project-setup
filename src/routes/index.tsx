@@ -4,6 +4,7 @@ import { About, Contact, Home } from "../pages";
 import Root from '../layouts/Root';
 
 const Routes = () => {
+  //1
   return (
     <AppRoutes>
       <Route
